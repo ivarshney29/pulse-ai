@@ -1,0 +1,8 @@
+{
+  "name": "Remix PulseAI - Smart Hospital Patient Management",
+  "description": "Integrated smart hospital triage, mutex-synchronized bed allocation, speech-to-text clinical documentation, and real-time patient health deterioration prediction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(203, 213, 225, 0.9);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 1);
+}
+
+@keyframes float-slow-1 {
+  0%, 100% { transform: translateY(0px) rotate(-6deg); }
+  50% { transform: translateY(-8px) rotate(-4deg); }
+}
+
+@keyframes float-slow-2 {
+  0%, 100% { transform: translateY(0px) rotate(6deg); }
+  50% { transform: translateY(-7px) rotate(8deg); }
+}
+
+@keyframes float-slow-3 {
+  0%, 100% { transform: translateY(0px) rotate(-4deg); }
+  50% { transform: translateY(-9px) rotate(-2deg); }
+}
+
+@keyframes float-slow-4 {
+  0%, 100% { transform: translateY(0px) rotate(5deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+}
+
+.animate-float-1 {
+  animation: float-slow-1 6s ease-in-out infinite;
+}
+.animate-float-2 {
+  animation: float-slow-2 7s ease-in-out infinite;
+}
+.animate-float-3 {
+  animation: float-slow-3 6.5s ease-in-out infinite;
+}
+.animate-float-4 {
+  animation: float-slow-4 7.5s ease-in-out infinite;
+}
+
